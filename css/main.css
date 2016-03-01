@@ -1,0 +1,217 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800);
+/* ==========================================================================
+  QUERIES
+   ========================================================================== */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-device-pixel-ratio: 1.25), only screen and (min-resolution: 200dpi), only screen and (min-resolution: 1.25dppx) {
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+x:after {
+  /*This adds a label in the top-left corner that displays the current media query state.*/
+  content: "undefined";
+  left: 0;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  padding: .5em 1em;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  z-index: 99;
+}
+@media only screen and (max-width: 529px) {
+  x:after {
+    background: orange;
+    content: "mobile";
+  }
+}
+@media only screen and (min-width: 530px) and (max-width: 949px) {
+  x:after {
+    background: purple;
+    content: "tablet";
+  }
+}
+@media only screen and (min-width: 950px) and (max-width: 1128px) {
+  x:after {
+    background: green;
+    content: "desktop";
+  }
+}
+@media only screen and (min-width: 1129px) {
+  x:after {
+    background: blue;
+    content: "desktop-xl";
+  }
+}
+/* ==========================================================================
+  QUERIES
+   ========================================================================== */
+/* =MIXINS (mostly from Twitter Bootstrap's mixins.less)
+   ---------------------------------------------------------------------------------------------------- */
+html {
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background: white;
+  font-family: 'Open Sans', sans-serif;
+}
+a:hover {
+  color: #9d32a1;
+}
+.btn-1 {
+  border: 2px solid white;
+  color: white;
+  padding: 0 15px;
+  text-transform: uppercase;
+  display: inline-block;
+  min-width: 70px;
+  text-align: center;
+}
+.btn-1:hover {
+  background: white;
+  color: #9d32a1;
+  text-decoration: none;
+}
+.navbar {
+  margin-bottom: 0;
+}
+.navbar .top-menu {
+  background: #f2f2f2;
+}
+.navbar .top-menu .socials {
+  text-align: right;
+  padding: 8px;
+}
+.navbar .top-menu .socials i {
+  color: #9d32a1;
+  margin: 0 3px;
+}
+.navbar .top-menu .login {
+  text-align: center;
+  background: #9d32a1;
+  padding: 8px;
+}
+.navbar .logo {
+  width: 200px;
+}
+@media only screen and (max-width: 529px) {
+  .navbar .logo {
+    width: 90px;
+  }
+}
+@media only screen and (min-width: 530px) and (max-width: 949px) {
+  .navbar .logo {
+    width: 90px;
+  }
+}
+.navbar .navbar-nav {
+  padding: 20px 0;
+}
+.navbar .navbar-nav > li {
+  text-transform: uppercase;
+  border-right: 1px solid #dbdbdb;
+}
+.navbar .navbar-nav > li:last-child {
+  border: none;
+}
+.navbar-default .navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #9d32a1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: transparent;
+}
+.navbar-default {
+  background: white;
+  border-color: #e7e7e7;
+}
+.tp-banner-container {
+  width: 100%;
+  position: relative;
+  padding: 0;
+}
+.tp-banner-container .title-1 {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.tp-banner {
+  width: 100%;
+  position: relative;
+}
+.tp-banner-fullscreen-container {
+  width: 100%;
+  position: relative;
+  padding: 0;
+}
+.nav-tabs > li {
+  width: 12.5%;
+  text-align: center;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #9d32a1;
+  cursor: default;
+  background-color: white;
+  border: none;
+  border-bottom: 2px solid #f2f2f2;
+}
+.nav-tabs > li.active > a .icono path,
+.nav-tabs > li.active > a:hover .icono path,
+.nav-tabs > li.active > a:focus .icono path {
+  fill: #9d32a1;
+}
+.nav-tabs > li > a {
+  -webkit-transition: all 600ms ease-in-out;
+  -moz-transition: all 600ms ease-in-out;
+  -o-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+  background: #f2f2f2;
+  margin-right: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  color: black;
+  padding: 25px;
+  border: none;
+  border-bottom: 2px solid #f2f2f2;
+}
+@media only screen and (min-width: 530px) and (max-width: 949px) {
+  .nav-tabs > li > a {
+    padding: 15px;
+    min-height: 150px;
+  }
+}
+@media only screen and (max-width: 529px) {
+  .nav-tabs > li > a {
+    padding: 5px;
+  }
+}
+.nav-tabs > li > a .icono {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.nav-tabs > li > a .icono path {
+  fill: black;
+}
+@media only screen and (max-width: 529px) {
+  .nav-tabs > li > a .icono {
+    margin-bottom: 0;
+  }
+}
+.nav-tabs > li > a span {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+@media only screen and (max-width: 529px) {
+  .nav-tabs > li > a span {
+    display: none;
+  }
+}
+.tab-content {
+  padding: 10px;
+}

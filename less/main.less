@@ -1,0 +1,162 @@
+@import "variables";
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+body { 
+	background: white;
+  font-family: @font1;
+}
+a{
+	&:hover{
+		color: @color1;
+	}
+}
+//GENERALS
+.btn-1{
+	border: 2px solid white;
+	color: white;
+	padding: 0 15px;
+	text-transform: uppercase;
+	display: inline-block;
+	min-width: 70px;
+	text-align: center;
+	&:hover{
+		background: white;
+		color: @color1;
+		text-decoration: none;
+	}
+}
+//NAVBAR
+.navbar{
+	margin-bottom: 0;
+	.top-menu{
+		background: @color2;
+		.socials{
+			text-align: right;
+			padding: 8px;
+			i{
+				color: @color1;
+				margin: 0 3px;
+			}
+		}
+		.login{
+			text-align: center;
+			background: @color1;
+			padding: 8px;
+		}
+	}
+	.logo{
+		width: 200px;
+		 @media @mobile {
+		width: 90px;
+    }
+    @media @tablet {
+    	width: 90px;
+    }
+	}
+	.navbar-nav{
+	padding: 20px 0;
+	}
+	.navbar-nav>li{
+		text-transform: uppercase;
+		border-right: 1px solid rgba(219, 219, 219, 1);
+		&:last-child{
+			border: none;
+		}
+	}
+}
+.navbar-default .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: @color1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: transparent
+}
+.navbar-default {
+    background: white;
+    border-color: #e7e7e7
+}
+// SLIDER
+.tp-banner-container{
+	width:100%;
+	position:relative;
+	padding:0;
+	.title-1{
+		color: white;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 40px;
+	}
+}
+
+.tp-banner{
+	width:100%;
+	position:relative;
+}
+
+.tp-banner-fullscreen-container {
+		width:100%;
+		position:relative;
+		padding:0;
+}
+.tp-bannertimer{
+
+}
+//TABS
+.nav-tabs>li{
+	 width: 12.5%;
+	 text-align: center;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: @color1;
+    cursor: default;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid @color2;
+    .icono{
+			path{
+				fill: @color1;
+			}
+		}
+}
+.nav-tabs>li>a{
+	.transition(600ms);
+	background: @color2;
+	margin-right: 0;
+	.border-radius(0);
+	color: black;
+	padding: 25px;
+	border: none;
+	border-bottom: 2px solid @color2;
+	@media @tablet {
+  	padding: 15px;
+  	min-height: 150px;
+  }
+  @media @mobile {
+  	padding: 5px;
+  }
+	.icono{
+		width: 100%;
+		margin-bottom: 10px;
+		path{
+			fill: black;
+		}
+		@media @mobile {
+  		margin-bottom: 0;
+		}
+	}
+	span{
+	 text-transform: uppercase;
+	 font-size: 10px;
+	 @media @mobile {
+  	display: none;
+  }
+	}
+}
+.tab-content{
+	padding: 10px;
+}
