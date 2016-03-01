@@ -116,3 +116,13 @@ jQuery('.tp-banner').show().revolution(
 
 
 });	//ready
+
+$(function(){
+    $(".typefx").typed({
+      strings: ["a place to work", "a place to learn"],
+      startDelay: 1500,
+      typeSpeed: 20,
+      backDelay: 3000,
+      loop: true
+    });
+});

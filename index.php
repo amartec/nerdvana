@@ -24,7 +24,6 @@
         <![endif]-->
         
 	 <?php include_once 'includes/menu.php';?>
-	 
     <div class="tp-banner-container">
 	<div class="tp-banner" >
 		<ul>
@@ -34,37 +33,38 @@
 			<img src="img/slides/dummy.png"  alt="" data-lazyload="img/slides/1.jpg" data-bgposition="center top" data-bgrepeat="no-repeat">
 			<!-- LAYERS -->
 			<!-- LAYER 1 -->
-			<div class="tp-caption title-1 sfl tp-resizeme rs-parallaxlevel-9"
-				data-x="center" data-hoffset="-180"
+			<div class="tp-caption title-1 lft tp-resizeme rs-parallaxlevel-7"
+				data-x="center"
 				data-y="center" data-voffset="-50"
 				data-speed="600"
-				data-start="500"
+				data-start="1000"
 				data-easing="Power3.easeInOut"
 				data-splitin="none"
 				data-splitout="none"
 				data-elementdelay="0.1"
 				data-endelementdelay="0.1"
 				data-endspeed="300"
-				style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">nerdvana is:
+				style="min-width: 680px; z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">nerdvana is: <span class="typefx"></span>
 			</div>
 			<!-- LAYER 2 -->
-			<div class="tp-caption title-1 lft tp-resizeme rs-parallaxlevel-9"
-				data-x="center" data-hoffset="150"
-				data-y="center" data-voffset="-50"
-				data-speed="600"
-				data-start="1000"
+			<div class="tp-caption lft tp-resizeme rs-parallaxlevel-9"
+				data-x="center" data-hoffset="-30"
+				data-y="center" 
+				data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+				data-speed="1000"
+				data-start="1500"
 				data-easing="Power3.easeInOut"
-				data-splitin="chars"
+				data-splitin="none"
 				data-splitout="none"
 				data-elementdelay="0.1"
 				data-endelementdelay="0.1"
-				data-endspeed="300"
-				style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">a place to work
+				data-linktoslide="next"
+				style="z-index: 13; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='btn-2'>TAKE A TOUR</a> <a href='#' class='btn-2'>JOIN</a>
 			</div>
 			</li>
 			<!-- END SLIDE  -->
 			<!-- SLIDE  -->
-			<li data-transition="random" data-slotamount="7" data-masterspeed="500" data-thumb=""  data-saveperformance="on"  data-title="">
+			<li data-transition="none" data-slotamount="7" data-masterspeed="500" data-thumb=""  data-saveperformance="on"  data-title="">
 			<!-- MAIN IMAGE -->
 			<img src="img/slides/dummy.png"  alt="" data-lazyload="img/slides/2.jpg" data-bgposition="center top" data-bgrepeat="no-repeat">
 			<!-- LAYERS -->
@@ -75,7 +75,8 @@
 	</div>
 </div>
     
-    <div class="container">
+    <div class="container text-center">
+	    <h1>meet the rio grade valley’s most innovative center</h1>
 	    <!-- Nav tabs -->
 		  <ul class="nav nav-tabs" role="tablist">
 		    <li role="presentation" class="active"><a href="#3d" aria-controls="3d" role="tab" data-toggle="tab">
@@ -120,7 +121,7 @@
 		    <div role="tabpanel" class="tab-pane fade" id="drone-racing">
 			    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		    </div>
-		    <div role="tabpanel" class="tab-pane fade" id="robotics">.d</div>
+		    <div role="tabpanel" class="tab-pane fade" id="robotics"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
 		    <div role="tabpanel" class="tab-pane fade" id="computing">..dasd.</div>
 		    <div role="tabpanel" class="tab-pane fade" id="gaming">..dasdas.</div>
 		    <div role="tabpanel" class="tab-pane fade" id="space-program">..dasdas.</div>
@@ -133,6 +134,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 	  
+	  <script src="bower_components/typed.js/dist/typed.min.js"></script>
 	  <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>   
     <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 	

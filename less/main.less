@@ -13,6 +13,10 @@ a{
 	}
 }
 //GENERALS
+h1{
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
 .btn-1{
 	border: 2px solid white;
 	color: white;
@@ -25,6 +29,22 @@ a{
 		background: white;
 		color: @color1;
 		text-decoration: none;
+	}
+}
+.btn-2{
+	border: 3px solid white;
+	color: white;
+	padding: 0 15px;
+	text-transform: uppercase;
+	display: inline-block;
+	min-width: 70px;
+	text-align: center;
+	font-size: 20px;
+	&:hover{
+		background: @color1;
+		color: white;
+		text-decoration: none;
+		border: 3px solid @color1;
 	}
 }
 //NAVBAR
@@ -159,4 +179,26 @@ a{
 }
 .tab-content{
 	padding: 10px;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }

@@ -56,6 +56,10 @@ body {
 a:hover {
   color: #9d32a1;
 }
+h1 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
 .btn-1 {
   border: 2px solid white;
   color: white;
@@ -69,6 +73,22 @@ a:hover {
   background: white;
   color: #9d32a1;
   text-decoration: none;
+}
+.btn-2 {
+  border: 3px solid white;
+  color: white;
+  padding: 0 15px;
+  text-transform: uppercase;
+  display: inline-block;
+  min-width: 70px;
+  text-align: center;
+  font-size: 20px;
+}
+.btn-2:hover {
+  background: #9d32a1;
+  color: white;
+  text-decoration: none;
+  border: 3px solid #9d32a1;
 }
 .navbar {
   margin-bottom: 0;
@@ -214,4 +234,43 @@ a:hover {
 }
 .tab-content {
   padding: 10px;
+}
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
